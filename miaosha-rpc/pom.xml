@@ -11,6 +11,12 @@
         <module>dubbo-consumer</module>
         <module>dubbo-provider</module>
     </modules>
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-autoconfigure</artifactId>
+        </dependency>
+    </dependencies>
     <packaging>pom</packaging>
 
     <name>${project.artifactId}</name>

@@ -121,4 +121,5 @@
             <artifactId>miaosha-order-api</artifactId>
         </dependency>
     </dependencies>
+
 </project>

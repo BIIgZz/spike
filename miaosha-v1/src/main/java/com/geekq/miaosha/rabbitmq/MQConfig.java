@@ -38,6 +38,12 @@ public class MQConfig {
         return new Queue(QUEUE, true);
     }
 
+    @Bean
+    public Queue miaoShaTest() {
+        return new Queue(MIAOSHATEST, true);
+    }
+
+
     /**
      * Topic模式 交换机Exchange
      */

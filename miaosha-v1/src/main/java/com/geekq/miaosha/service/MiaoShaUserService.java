@@ -89,6 +89,8 @@ public class MiaoShaUserService {
         MiaoshaUser miaoShaUser = new MiaoshaUser();
         miaoShaUser.setNickname(userName);
         String DBPassWord = MD5Utils.formPassToDBPass(passWord, salt);
+        Long id = System.currentTimeMillis();
+        miaoShaUser.setId(id);
         miaoShaUser.setPassword(DBPassWord);
         miaoShaUser.setRegisterDate(new Date());
         miaoShaUser.setSalt(salt);
